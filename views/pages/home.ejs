@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>RadTube</title>
+		<link rel="stylesheet" href="/styles.css" />
+	</head>
+	<body>
+    <%- include('../partials/header') %>
+<main>
+  <%- include('../partials/sidenav') %>
+  <div class="content">
+    <%- include('../partials/tabs') %>
+    <div class="video-container">
+      <%- include('../partials/video') %>
+    </div>
+    <div class="shorts-container">
+      <h2>Shorts</h2>
+    <%- include('../partials/shorts') %>
+    </div>
+  </div>
+</main>
+
+	
+	</body>
+</html>
