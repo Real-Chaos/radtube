@@ -14,6 +14,20 @@ body {
 }
 
 /* Header Styling */
+
+.header-container {
+	display: grid;
+	/* padding: 15px 30px; */
+	background: #0b1120;
+	color: #e4f1ff;
+	box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3);
+	position: fixed;
+	top: 0;
+	width: calc(100%); /* Accommodates the sidenav */
+	z-index: 1000;
+	padding-bottom: 20px;
+	/* left: 100px; */
+}
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -21,7 +35,7 @@ body {
 	padding: 15px 30px;
 	background: #0b1120;
 	color: #e4f1ff;
-	box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3);
+	/* box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3); */
 	position: fixed;
 	top: 0;
 	width: calc(100% - 100px); /* Accommodates the sidenav */
@@ -242,10 +256,13 @@ body {
 
 /* Tabs */
 .tabs {
-	margin: 100px 0 20px 120px;
-	padding: 20px 10px 0 20px;
+	/* margin: 100px 0 20px 120px;
+	padding: 20px 10px 0 20px; */
 	display: flex;
 	gap: 15px;
+	z-index: 1000;
+	/* padding: 10px 20px; */
+	padding: 70px 0 0 120px;
 }
 
 .tabs button {
@@ -280,10 +297,11 @@ body {
 }
 .video-grid {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	gap: 20px;
 	margin: 0 20px;
 	padding: 0 30px;
+  margin-top: 150px;
 }
 
 /* Video Card */
@@ -353,7 +371,7 @@ body {
 }
 .shorts-grid {
 	display: grid;
-	grid-template-columns: repeat(5, 1fr); /* 5 shorts per row */
+	grid-template-columns: repeat(6, 1fr); /* 5 shorts per row */
 	gap: 15px;
 	margin-top: 20px;
 	margin-left: 60px;
