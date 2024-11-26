@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sign Up</title>
+		<link rel="stylesheet" href="/forms.css" />
+	</head>
+	<body>
+		<div class="auth-container">
+			<div class="form-container">
+				<h1>⚡ RadTube Sign Up</h1>
+				<form action="/signup" method="POST">
+					<div class="form-group">
+						<input
+							type="text"
+							id="username"
+							name="username"
+							placeholder="Enter your username"
+							required
+						/>
+					</div>
+					<div class="form-group">
+						<input
+							type="email"
+							id="email"
+							name="email"
+							placeholder="Enter your email"
+							required
+						/>
+					</div>
+					<div class="form-group">
+						<input
+							type="password"
+							id="password"
+							name="password"
+							placeholder="Create a password"
+							required
+						/>
+					</div>
+					<div class="form-group">
+						<input
+							type="password"
+							id="confirm-password"
+							name="confirm-password"
+							placeholder="Confirm your password"
+							required
+						/>
+					</div>
+					<button type="submit" class="auth-button">Sign Up</button>
+				</form>
+				<p class="switch-page">
+					Already have an account? <a href="/login">Login</a>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

@@ -12,3 +12,31 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+
+model User {
+  id         Int       @id @default(autoincrement())
+  email      String    @unique
+  username   String
+  password   String
+  files      File[]
+  createdAt  DateTime  @default(now()) 
+}
+
+
+model File {
+  id        Int      @id @default(autoincrement())
+  filename  String
+  filepath  String
+  userId    Int
+  user      User      @relation(fields: [userId], references: [id]) // Link to User model
+  uploadedAt DateTime @default(now())
+}
+
+model Session {
+  id         String    @id @default(cuid())
+  sid        String    @unique
+  data       String
+  expiresAt  DateTime  @map("expires")
+  @@map("Session")
+}

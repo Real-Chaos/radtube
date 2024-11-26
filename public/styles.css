@@ -13,6 +13,11 @@ body {
 	color: #e4f1ff;
 }
 
+a {
+  text-decoration: none;
+  color: none;
+}
+
 /* Header Styling */
 
 .header-container {
@@ -131,6 +136,34 @@ body {
 } */
 
 /* Sidenav */
+/* Sidenav Item */
+li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+li:hover {
+  background: rgba(0, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+
+li .icon {
+  font-size: 24px;
+  color: #00fff6;
+  text-shadow: 0 0 10px #00fff6, 0 0 20px #1e90ff;
+}
+
+li .text {
+  font-size: 16px;
+  color: #e4f1ff;
+}
+
+
 .sidenav {
 	width: 100px;
 	height: 100vh;
@@ -260,9 +293,11 @@ body {
 	padding: 20px 10px 0 20px; */
 	display: flex;
 	gap: 15px;
-	z-index: 1000;
+	z-index: 500;
 	/* padding: 10px 20px; */
-	padding: 70px 0 0 120px;
+	/* padding: 70px 0 0 120px; */
+  margin-top: 80px;
+  margin-left: 130px;
 }
 
 .tabs button {

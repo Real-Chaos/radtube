@@ -1,14 +1,23 @@
 
 
 <div class="video-grid">
-  <div class="video-card">
+  <% files.forEach(file => { %>
+    <div class="video-card">
+      <img src="<%= file.filepath %>" alt="Video Thumbnail" />
+      <div class="overlay">
+        <h3>Video Title</h3>
+      <p>1M views · 1 day ago</p>
+      </div>
+    </div>
+  <% }) %>
+  <!-- <div class="video-card">
     <img src="https://t4.ftcdn.net/jpg/05/72/82/85/360_F_572828530_ofzCYowQVnlOwkcoBJnZqT36klbJzWdn.jpg" alt="Video Thumbnail" />
     <div class="overlay">
       <h3>Video Title</h3>
     <p>1M views · 1 day ago</p>
     </div>
-  </div>
-  <div class="video-card">
+  </div> -->
+  <!-- <div class="video-card">
     <img src="https://gratisography.com/wp-content/uploads/2024/01/gratisography-cyber-kitty-800x525.jpg" alt="Video Thumbnail" />
     <div class="overlay">
       <h3>Video Title</h3>
@@ -56,7 +65,7 @@
       <h3>Video Title</h3>
     <p>500k views · 3 days ago</p>
     </div>
-  </div>
+  </div> -->
   <!-- Repeat Video Cards -->
 </div>
 
